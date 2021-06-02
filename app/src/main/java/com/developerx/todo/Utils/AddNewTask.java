@@ -93,6 +93,7 @@ public class AddNewTask extends BottomSheetDialogFragment {
                     todoModel task = new todoModel();
                     task.setTask(text);
                     task.setStatus(0);
+                    db.insertTask(task);
                 }
                 dismiss();
             }

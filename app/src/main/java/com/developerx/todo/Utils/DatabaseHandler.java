@@ -40,6 +40,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public  void  openDatabase(){
         db= this.getWritableDatabase();
     }
+
     public  void  insertTask(todoModel task){
         ContentValues cv = new ContentValues();
         cv.put(TASK,task.getTask());

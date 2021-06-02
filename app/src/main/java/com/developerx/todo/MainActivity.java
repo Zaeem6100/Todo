@@ -47,15 +47,15 @@ public class MainActivity extends AppCompatActivity implements DialogCloseListne
          tasklist = new ArrayList<>();
 
 //         //dummy data
-        todoModel task = new todoModel();
-        task.setTask("Test task");
-        task.setStatus(0);
-        task.setId(1);
-        tasklist.add(task);
-        tasklist.add(task);
-        tasklist.add(task);
-        tasklist.add(task);
-        taskAdapter.setTask(tasklist);
+//        todoModel task = new todoModel();
+//        task.setTask("Test task");
+//        task.setStatus(0);
+//        task.setId(1);
+//        tasklist.add(task);
+//        tasklist.add(task);
+//        tasklist.add(task);
+//        tasklist.add(task);
+//        taskAdapter.setTask(tasklist);
 
         tasklist = db.getAllTasks();
         Collections.reverse(tasklist);
